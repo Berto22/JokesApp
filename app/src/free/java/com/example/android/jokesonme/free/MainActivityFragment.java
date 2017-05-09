@@ -2,6 +2,7 @@ package com.example.android.jokesonme.free;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,6 +26,8 @@ public class MainActivityFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        Log.d("free", "free fragment");
+
         MobileAds.initialize(getContext(), "ca-app-pub-1822618669019557/2990058229");
         // Inflate the layout for this fragment
         View root = inflater.inflate(R.layout.fragment_main, container, false);
@@ -33,7 +36,7 @@ public class MainActivityFragment extends Fragment {
         AdView adView = (AdView) root.findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                .addTestDevice("xxxxxxxxxx")
+                .addTestDevice("3A1D3943584BE41A8DFCD807D62E70DD")
                 .build();
         adView.loadAd(adRequest);
 

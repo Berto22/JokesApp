@@ -54,6 +54,7 @@ dependencies {
     compile('com.google.http-client:google-http-client-gson:1.22.0') {
         exclude module: 'httpclient'
     }
+
     compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
     compile 'com.google.code.findbugs:jsr305:2.0.1'
     compile 'commons-codec:commons-codec:1.10'
@@ -61,6 +62,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     freeCompile 'com.google.android.gms:play-services-ads:10.2.4'
     freeCompile 'com.google.firebase:firebase-ads:10.2.1'
-
 }
+
 
