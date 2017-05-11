@@ -7,4 +7,3 @@
     tools:layout="@layout/fragment_main"
     tools:context=".MainActivity"/>
 
-    <!--android:name="MainActivityFragment" -->

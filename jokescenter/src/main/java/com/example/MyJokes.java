@@ -1,7 +1,7 @@
 package com.example;
 
 public class MyJokes {
-    private String mMyJokes;
+    private String mMyJokes= "My next joke is funny";
 
     public MyJokes() {
     }

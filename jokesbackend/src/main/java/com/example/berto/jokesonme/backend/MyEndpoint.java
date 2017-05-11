@@ -32,37 +32,8 @@ public class MyEndpoint {
     @ApiMethod(name = "getJoke")
     public MyJokes getJoke(@Nullable @Named("mMyJokes") String mMyjokes) {
         MyJokes response = new MyJokes();
-        response.setmMyJokes("My first joke");
+        response.getmMyJokes();
         return response;
     }
-
-    /**
-     * A simple endpoint method that takes a name and says Hi back
-     */
-    /*@ApiMethod(name = "sayHi")
-    public MyBean sayHi(@Named("name") String name) {
-        MyBean response = new MyBean();
-        response.setData("Hi, " + name);
-
-
-        return response;
-    } */
-
-    /*@ApiMethod(name = "sayHi")
-    public MyBean sayHi(@Named("joke") String joke) {
-        MyBean response = new MyBean();
-        response.setData("Hi" + joke);
-
-
-        return response;
-    } */
-
-
-    /*public MyJokes fetchJoke() {
-        MyJokes response = new MyJokes();
-        response.setmMyJokes("This is funny");
-
-        return response;
-    } */
 
 }

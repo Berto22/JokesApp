@@ -3,8 +3,4 @@
     <string name="button_name">Click here</string>
     <string name="textView">Read for a joke?</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <!--<string name="banner_ad_unit_id">ca-app-pub-1822618669019557/2990058229</string>
-    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string> -->
 </resources>

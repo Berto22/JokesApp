@@ -8,22 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
-
-//import static com.google.cloud.sql.jdbc.internal.ConnectionOperationHelper.commit;
-
-
 import com.example.android.displaymyjokes.DisplayMyJokesActivity;
-//import MainActivityFragment;
-//import MainActivityFragment;
-//import MainActivityFragment;
-//import MainActivityFragment;
-//import MainActivityFragment;
-//import MainActivityFragment;
-//import MainActivityFragment;
-//import MainActivityFragment;
-//import MainActivityFragment;
-//import MainActivityFragment;
-//import MainActivityFragment;
 import com.example.android.jokesonme.MainActivityFragment.MainActivityFragment;
 import com.example.berto.jokesonme.backend.myApi.MyApi;
 import com.google.api.client.extensions.android.http.AndroidHttp;
@@ -52,7 +37,7 @@ class MyJokesAsyncTask extends AsyncTask<String, Void, String> {
                     // - 10.0.2.2 is localhost's IP address in Android emulator
                     // - turn off compression when running against local devappserver
                     .setRootUrl("http://10.0.2.2:8080/_ah/api/")
-                    //.setRootUrl("http://xxxxxxx:8080/_ah/api")
+                    //.setRootUrl("http://xxxxxxx/_ah/api")
                     .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
                         @Override
                         public void initialize(AbstractGoogleClientRequest<?> abstractGoogleClientRequest) throws IOException {
@@ -77,11 +62,6 @@ class MyJokesAsyncTask extends AsyncTask<String, Void, String> {
     @Override
     protected void onPostExecute(String s) {
         super.onPostExecute(s);
-        Log.d("message", "joke here" + s);
-        /*Intent intent = new Intent(context, DisplayMyJokesActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        intent.putExtra("display", s);
-        context.startActivity(intent); */
         if(s != null) {
             Intent intent = new Intent(context, DisplayMyJokesActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -98,7 +78,6 @@ class MyJokesAsyncTask extends AsyncTask<String, Void, String> {
 
 public class MainActivity extends AppCompatActivity {
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
-    public static String newJoke;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
