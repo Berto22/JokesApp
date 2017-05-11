@@ -7,4 +7,4 @@
     tools:layout="@layout/fragment_main"
     tools:context=".MainActivity"/>
 
-    <!--android:name="com.example.android.jokesonme.free.MainActivityFragment" -->
+    <!--android:name="MainActivityFragment" -->

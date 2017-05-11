@@ -33,8 +33,11 @@ android {
         enabled = true
     }
     sourceSets {
-        free { java.srcDirs = ['src/free/java', 'src/free/java/free'] }
-        paid { java.srcDirs = ['src/paid/java', 'src/paid/java/', 'src/paid/java/MainActivity'] }
+        //free { java.srcDirs = ['src/free/java', 'src/free/java/free'] }
+        //paid { java.srcDirs = ['src/paid/java', 'src/paid/java/', 'src/paid/java/MainActivity'] }
+        free { java.srcDirs = ['src/free/java'] }
+        paid { java.srcDirs = ['src/paid/java'] }
+        //paid { java.srcDirs = ['src/paid/java', 'src/paid/java/', 'src/paid/java/MainActivity'] }
     }
 
 

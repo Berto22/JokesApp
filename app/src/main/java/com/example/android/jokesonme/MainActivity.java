@@ -3,37 +3,28 @@ package com.example.android.jokesonme;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.util.Pair;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.Toast;
 
-import static android.R.attr.button;
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
-import static android.os.Build.VERSION_CODES.M;
-import static android.webkit.ConsoleMessage.MessageLevel.LOG;
-import static com.example.android.jokesonme.MainActivity.newJoke;
-
 //import static com.google.cloud.sql.jdbc.internal.ConnectionOperationHelper.commit;
-import static org.apache.commons.codec.digest.MessageDigestAlgorithms.MD5;
 
 
-import com.example.MyJokes.*;
-
-import com.example.MyJokes;
 import com.example.android.displaymyjokes.DisplayMyJokesActivity;
-//import com.example.android.jokesonme.free.MainActivityFragment;
-//import com.example.android.jokesonme.paid.MainActivityFragment;
-//import com.example.android.jokesonme.free.MainActivityFragment;
-import com.example.android.jokesonme.free.MainActivityFragment;
-//import com.example.android.jokesonme.paid.MainActivityFragment;
+//import MainActivityFragment;
+//import MainActivityFragment;
+//import MainActivityFragment;
+//import MainActivityFragment;
+//import MainActivityFragment;
+//import MainActivityFragment;
+//import MainActivityFragment;
+//import MainActivityFragment;
+//import MainActivityFragment;
+//import MainActivityFragment;
+//import MainActivityFragment;
+import com.example.android.jokesonme.MainActivityFragment.MainActivityFragment;
 import com.example.berto.jokesonme.backend.myApi.MyApi;
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
@@ -41,7 +32,6 @@ import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
 import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
 
 import java.io.IOException;
-import com.example.berto.jokesonme.backend.myApi.MyApi.GetJoke;
 
 class MyJokesAsyncTask extends AsyncTask<String, Void, String> {
     private MyApi myApiService = null;
