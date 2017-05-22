@@ -65,6 +65,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     freeCompile 'com.google.android.gms:play-services-ads:10.2.4'
     freeCompile 'com.google.firebase:firebase-ads:10.2.1'
+
 }
 
 

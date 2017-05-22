@@ -26,6 +26,8 @@ public class MainActivityFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        Log.d("free", "free fragment");
+
         MobileAds.initialize(getContext(), "ca-app-pub-1822618669019557/2990058229");
         // Inflate the layout for this fragment
         View root = inflater.inflate(R.layout.fragment_main, container, false);
